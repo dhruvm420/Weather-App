@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+  <link rel="stylesheet" href="/assets/index-1ddc1010.css">
+</head>
+
+<body class="bg-blue-500">
+    <main
+        class="w-[40vw] bg-white flex-col items-center justify-center mx-auto my-28 rounded-xl px-3 py-5 border-sky-400 border-2">
+        <section>
+            <div class="search-box flex justify-center m-1">
+                <input type="text" placeholder="Enter your location"
+                    class="input-box relative left-4 w-52 bg-teal-100 mx-0 rounded-md px-2 py-1 focus:outline-1 focus:outline-teal-400">
+                <button
+                    class="fa-solid fa-magnifying-glass bg-teal-100 p-1 h-[90%] my-auto relative right-4 rounded-md focus:outline-1 hover:text-white hover:bg-teal-400 focus:outline-teal-400"
+                    id="searchBtn"></button>
+            </div>
+        </section>
+        <div class="location-not-found my-4 flex-col space-y-4" style="display: none;">
+            <h1 class="text-2xl font-bold text-center">Sorry, Location Not Found!!</h1>
+            <img class = "mx-auto w-72" src="/assets/404.png" alt="404 Error">
+        </div>
+        <div class="weather-output flex-col space-y-4" style="display: none;">
+            <div class="weather-box space-y-1">
+                <img src="/assets/cloud.png" alt="weather-image" class="weather-img mx-auto w-72">
+            </div>
+            <div class="weather-body space-y-1">
+                <p class="temperature text-center text-5xl my-1 font-bold">0<sup>°</sup>C</p>
+                <p class="description text-center text-xl my-1 font-medium capitalize">Light Rain</p>
+            </div>
+            <div class="weather-details flex justify-between px-12">
+                <div class="humidity flex space-x-2 items-center">
+                    <i class="fa-sharp fa-solid fa-droplet text-5xl"></i>
+                    <div class="text px-2">
+                        <span id="humidity-value" class="font-bold text-2xl">45%</span>
+                        <p class="font-medium text-xl">Humidity</p>
+                    </div>
+                </div>
+                <div class="wind flex space-x-2 items-center">
+                    <i class="fa-solid fa-wind text-5xl"></i>
+                    <div class="text px-1">
+                        <span id="wind-speed" class="font-bold text-2xl">45Km/hr</span>
+                        <p class="font-medium text-xl">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+
+</html>
