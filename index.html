@@ -10,20 +10,24 @@
   <link rel="stylesheet" href="./assets/index-1ddc1010.css">
 </head>
 
-<body class="bg-blue-500">
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+    <h1 class="mb-4 text-3xl py-2 font-extrabold text-white md:text-5xl lg:text-6xl text-center">
+        <img class = "h-16 absolute left-[32.5%] top-1" src="./assets/clear.png" alt="logo">
+        Weather App
+    </h1>
     <main
-        class="w-[40vw] bg-white flex-col items-center justify-center mx-auto my-28 rounded-xl px-3 py-5 border-sky-400 border-2">
+        class="w-[40vw] bg-gradient-to-r  from-pink-300 to-purple-300 flex-col items-center justify-center mx-auto my-12 rounded-xl px-3 py-5 border-sky-400 border-2">
         <section>
             <div class="search-box flex justify-center m-1">
                 <input type="text" placeholder="Enter your location"
-                    class="input-box relative left-4 w-52 bg-teal-100 mx-0 rounded-md px-2 py-1 focus:outline-1 focus:outline-teal-400">
+                    class="input-box relative left-4 w-52 text-sky-600 placeholder:text-sky-600 bg-sky-100 mx-0 rounded-md px-2 py-1 focus:outline-sky-400">
                 <button
-                    class="fa-solid fa-magnifying-glass bg-teal-100 p-1 h-[90%] my-auto relative right-4 rounded-md focus:outline-1 hover:text-white hover:bg-teal-400 focus:outline-teal-400"
+                    class="fa-solid fa-magnifying-glass bg-sky-200 p-1 h-[90%] my-auto relative right-4 rounded-md focus:outline-1 hover:text-white hover:bg-sky-400 focus:outline-sky-400"
                     id="searchBtn"></button>
             </div>
         </section>
         <div class="location-not-found my-4 flex-col space-y-4" style="display: none;">
-            <h1 class="text-2xl font-bold text-center">Sorry, Location Not Found!!</h1>
+            <h1 class="text-center text-2xl my-1 font-medium capitalize">Sorry, Location Not Found!!</h1>
             <img class = "mx-auto w-72" src="./assets/404.png" alt="404 Error">
         </div>
         <div class="weather-output flex-col space-y-4" style="display: none;">
@@ -55,4 +59,4 @@
     <script src="./script.js"></script>
 </body>
 
-</html>
+</html> 

@@ -32,7 +32,7 @@ async function checkWeather(city){
     temperature.innerHTML = `${Math.round(weather_data.main.temp - 273.15)}°C`;
     description.innerHTML = `${weather_data.weather[0].description}`;
     humidity.innerHTML = `${weather_data.main.humidity}%`;
-    wind_speed.innerHTML = `${weather_data.wind.speed}Km/H`;
+    wind_speed.innerHTML = `${weather_data.wind.speed}Km/hr`;
 
     var condition = weather_data.weather[0].main;
     switch(condition){
@@ -51,10 +51,7 @@ async function checkWeather(city){
         case 'Snow':
             weather_img.src = "./assets/snow.png";
             break;
-
     }
-
-    console.log(weather_data);
 }
 
 inputBox.addEventListener("keydown", function (e) {
