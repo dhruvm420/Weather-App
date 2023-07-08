@@ -11,12 +11,14 @@
 </head>
 
 <body class="bg-gradient-to-r from-cyan-500 to-blue-500">
-    <h1 class="mb-4 text-3xl py-2 font-extrabold text-white md:text-5xl lg:text-6xl text-center">
-        <img class = "h-16 absolute left-[32.5%] top-1" src="./assets/clear.png" alt="logo">
-        Weather App
-    </h1>
+    <header class="flex py-2 justify-center ">
+        <img class = "h-10 md:h-12 lg:h-16" src="./assets/clear.png" alt="logo">
+        <h1 class="font-extrabold text-white text-4xl md:text-5xl lg:text-6xl text-center">
+            Weather App
+        </h1>
+    </header>
     <main
-        class="w-[40vw] bg-gradient-to-r  from-pink-300 to-purple-300 flex-col items-center justify-center mx-auto my-12 rounded-xl px-3 py-5 border-sky-400 border-2">
+        class="w-[83vw] md:w-[60vw] lg:w-[45vw] bg-gradient-to-r  from-pink-300 to-purple-300 flex-col items-center justify-center mx-auto my-2 md:my-6 lg:my-12 rounded-xl px-3 py-5 border-sky-400 border-2">
         <section>
             <div class="search-box flex justify-center m-1">
                 <input type="text" placeholder="Enter your location"
@@ -27,12 +29,12 @@
             </div>
         </section>
         <div class="location-not-found my-4 flex-col space-y-4" style="display: none;">
-            <h1 class="text-center text-2xl my-1 font-medium capitalize">Sorry, Location Not Found!!</h1>
-            <img class = "mx-auto w-72" src="./assets/404.png" alt="404 Error">
+            <h1 class="text-center text-lg md:text-xl lg:text-2xl my-1 font-medium capitalize">Sorry, Location Not Found!!</h1>
+            <img class = "mx-auto w-44 md:w-56 lg:w-72" src="./assets/404.png" alt="404 Error">
         </div>
         <div class="weather-output flex-col space-y-4" style="display: none;">
             <div class="weather-box space-y-1">
-                <img src="./assets/cloud.png" alt="weather-image" class="weather-img mx-auto w-72">
+                <img src="./assets/cloud.png" alt="weather-image" class="weather-img mx-auto w-44 md:w-56 lg:w-72">
             </div>
             <div class="weather-body space-y-1">
                 <p class="temperature text-center text-5xl my-1 font-bold">0<sup>°</sup>C</p>
@@ -42,15 +44,15 @@
                 <div class="humidity flex space-x-2 items-center">
                     <i class="fa-sharp fa-solid fa-droplet text-5xl"></i>
                     <div class="text px-2">
-                        <span id="humidity-value" class="font-bold text-2xl">45%</span>
-                        <p class="font-medium text-xl">Humidity</p>
+                        <span id="humidity-value" class="font-bold text-lg md:text-xl lg:text-2xl">45%</span>
+                        <p class="font-medium md:text-lg lg:text-xl">Humidity</p>
                     </div>
                 </div>
                 <div class="wind flex space-x-2 items-center">
                     <i class="fa-solid fa-wind text-5xl"></i>
                     <div class="text px-1">
-                        <span id="wind-speed" class="font-bold text-2xl">45Km/hr</span>
-                        <p class="font-medium text-xl">Wind Speed</p>
+                        <span id="wind-speed" class="font-bold text-lg md:text-xl lg:text-2xl">45Km/hr</span>
+                        <p class="font-medium md:text-lg lg:text-xl">Wind Speed</p>
                     </div>
                 </div>
             </div>
